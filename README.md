@@ -135,11 +135,25 @@ After scnario 1 and 2 we can ask some recommendation based on your search
 - > Thank you for your visit ! Have a good day
 
 # Chatbot
-## Intent entities
-## Response
-### api
-### dataset
-### recommend
+We start by creating a dictionary that contains intent and responses for example
+
+hello': 'Hello! I am a VideoGames ChatBot...
+
+then thanks to the nltk library we have created a dictionary which contains the list of synonyms associated to the key in this example we will have
+
+'hello': re.compile('.\bhowdy\b.|.\bhi\b.|.\bhullo\b.|.\bhello\b.|.\bhow do you do\b.|.\bhello\b.')
+
+when adding the synonym we add the matchmaker regex form thanks to the creation of this intermediate dictionary the chatbot will be able to understand a large spectrum of words to better target the user's request.
+
+We used the discord library to create our chatbot.
+
+The token for the discord bot is in the config file. On the GitHub we put the example of a token you will find the right config file in the mail we sent you.
+
+When we launch the Bot we initialize the answers to save time when sending messages.
+
+Then when the bot receives a message it just scans the dictionary for a matching key if it is not the case it looks if the user has not tried to say the name of a game. If there is no match we have defined a default answer
+
+When the user asks for an information or a list of games we call functions defined above (top_by_column,query_in_dataset,query_in_api) depending on the request we make a query via the api or in the dataset we have imported.
 
 
 # Recommandation System
