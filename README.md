@@ -82,6 +82,12 @@ https://discord.com/oauth2/authorizeclient_id=951418595987050597&scope=bot&permi
  
 
 ## Scenario
+
+### How to use the chatbot 
+Here a link to see how the chatbot works
+
+
+https://www.youtube.com/watch?v=-L3_apstqfA
 ### scenario 1 : Ask for informations about a game  (ideas for games ideas if you need)
 - Hello
 - >Hello! I am a VideoGames ChatBot ....
